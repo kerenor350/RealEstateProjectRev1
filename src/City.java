@@ -1,9 +1,15 @@
 public class City {
 
-    private String cityName;
-    private final static String[] district = {"South", "North", "Negev", "Center", "Hasharon"};
-    private static String[] streetName = {"Ben Yehuda", "Even Gavirol", "Hatamar"," Itzchak Shamir", };
+    private String city;
+    private String district;
+    private String [] streetName;
 
+
+    public City(String city, String district, String [] streetName) {
+        this.city = city;
+        this.district = district;
+        this.streetName = streetName;
+    }
 
     public String getCityName() {
         return cityName;
@@ -25,4 +31,28 @@ public class City {
         this.streetName = streetName;
 
     }
+    public String getStreetName1() {
+        return streetName1;
+    }
+
+    public void setStreetName1(String streetName1) {
+        this.streetName1 = streetName1;
+    }
+
+    public String getStreetName2() {
+        return streetName2;
+    }
+
+    public void setStreetName2(String streetName2) {
+        this.streetName2 = streetName2;
+    }
+
+    public String getStreetName3() {
+        return streetName3;
+    }
+
+    public void setStreetName3(String streetName3) {
+        this.streetName3 = streetName3;
+    }
+
 }

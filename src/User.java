@@ -13,34 +13,7 @@ public class User {
         this.agentOrRegular = agentOrRegular;
     }
 
-    public String UserLogin(String userName, String password, User [] users, String[] arrayPassword) {
-        boolean checkUser = false;
-        boolean checkPassword = false;
-        int indexUser = 0;
-        int indexPassword=0;
-        String match;
-        for (int i = 0; i < users.length; i++) {
-            if (userName == this.username) {
-                checkUser = true;
-                indexUser=i;
-            }
-            if (password == this.password) {
-                checkPassword = true;
-                indexPassword =i;
-            }
 
-        }
-        if(indexUser!=indexPassword){
-            checkPassword=false;
-            checkUser=false;
-        }
-        if (checkUser && checkPassword) {
-            match = "succseed";
-        } else {
-            match = null;
-        }
-        return match;
-    }
 
         public User(){
         }
